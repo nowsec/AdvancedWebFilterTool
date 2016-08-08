@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "header.h"
-
 #include "windivert.h"
 
 void PacketInit(PPACKET packet)
@@ -179,7 +178,7 @@ void BlackListRead(PBLACKLIST blacklist, const char *filename)
 		}
 		if (c != '-' && !isalnum(c))
 		{
-			while (!isspace(c = getc(file)) && c != EOF)
+			while (!isspace(c = getc(file)) && c != EOF)		//isspace 공백이 아니면 0이 아닌 값을 반환한다.
 				;
 			if (c == EOF)
 			{
@@ -189,7 +188,7 @@ void BlackListRead(PBLACKLIST blacklist, const char *filename)
 		}
 		i = 0;
 		domain[i++] = (char)c;
-		while ((isalnum(c = getc(file)) || c == '-' || c == '.') && i < MAXURL)
+		while ((isalnum(c = getc(file)) || c == '-' || c == '.') && i < MAXURL)		//isalnum 숫자나 문자가 아니면 0이 아닌 값이 들어간다.
 		{
 			domain[i++] = (char)c;
 		}

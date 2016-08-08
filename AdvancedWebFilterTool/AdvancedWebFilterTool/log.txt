@@ -2,3 +2,6 @@ BLCOK! site : www.nate.com ip.SrcAddr=192.168.32.236 ip.DstAddr=120.50.132.112
 BLCOK! site : www.nate.com ip.SrcAddr=192.168.32.236 ip.DstAddr=120.50.132.112
 BLCOK! site : gilgil.net ip.SrcAddr=192.168.32.236 ip.DstAddr=121.131.52.53
 BLCOK! site : gilgil.net ip.SrcAddr=192.168.32.236 ip.DstAddr=121.131.52.53
+BLCOK! site : www.nate.com ip.SrcAddr=192.168.43.111 ip.DstAddr=120.50.132.112
+BLCOK! site : www.nate.com ip.SrcAddr=192.168.43.111 ip.DstAddr=120.50.132.112
+BLCOK! site : www.nate.com ip.SrcAddr=192.168.32.49 ip.DstAddr=120.50.132.112
